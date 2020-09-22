@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "s3_trigger_to_gcs"
+version = "0.1.0"
+description = ""
+authors = ["Sam Yao <sam@clouf-ace.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+chalice = "^1.19.0"
+google-cloud-storage = "^1.31.0"
+boto3 = "^1.14.55"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+black = {version = "^20.8b1", allow-prereleases = true}
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
